@@ -1,4 +1,4 @@
-# rules_blender
+# rules_imagemagick
 
 [Bazel](https://bazel.build) rules for [ImageMagick](https://imagemagick.org/)
 
