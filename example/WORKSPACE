@@ -1,0 +1,8 @@
+local_repository(
+    name = "rules_imagemagick",
+    path = "../",
+)
+
+load("@rules_imagemagick//:index.bzl", "imagemagick_repositories")
+
+imagemagick_repositories()
