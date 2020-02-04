@@ -23,17 +23,18 @@ def imagemagick_repositories():
     http_archive(
         name = "imagemagick_win64",
         urls = [
-            "https://imagemagick.org/download/binaries/ImageMagick-7.0.9-12-portable-Q16-x64.zip",
+            "https://imagemagick.org/download/binaries/ImageMagick-7.0.9-21-portable-Q16-x64.zip",
         ],
-        sha256 = "066772951ab861c209b01fb3b17aaa507a7a65aaf78ecf4b8f4a9991c1b700bc",
+        sha256 = "9a6a0d9da37667e975384ba275537a268447d1eea5d4dfb2f0b9c89d01e4a3d7",
         build_file_content = _imagemagick_build_file_content,
     )
 
     http_archive(
         name = "imagemagick_win32",
         urls = [
-            "https://imagemagick.org/download/binaries/ImageMagick-7.0.9-12-portable-Q16-x86.zip",
+            "https://imagemagick.org/download/binaries/ImageMagick-7.0.9-21-portable-Q16-x86.zip",
         ],
+        sha256 = "c6619c4b6ca896adc14fdd4872483f75f4d9121bf22bbf7e65e2d031304b6f72",
         build_file_content = _imagemagick_build_file_content,
     )
 
