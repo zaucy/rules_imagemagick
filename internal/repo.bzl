@@ -19,6 +19,19 @@ imagemagick_alias_repository = repository_rule(
     },
 )
 
+def _imagemagick_linux_repo_rule_impl(rctx):
+    rctx.file("BUILD.bazel", executable = False, content = _imagemagick_build_file_content)
+    rctx.download(
+        "https://imagemagick.org/download/binaries/magick",
+        output = "magick",
+        executable = True,
+        allow_fail = False,
+    )
+
+_imagemagick_linux_repo = repository_rule(
+    implementation = _imagemagick_linux_repo_rule_impl,
+)
+
 def imagemagick_repositories():
     http_archive(
         name = "imagemagick_win64",
@@ -36,6 +49,10 @@ def imagemagick_repositories():
         ],
         sha256 = "cdf60c00809d7352d59da0c1db2683bbe11578fd4ccc1a2f5e95e2ba0bc5baff",
         build_file_content = _imagemagick_build_file_content,
+    )
+
+    _imagemagick_linux_repo(
+        name = "imagemagick_linux"
     )
 
     http_archive(
