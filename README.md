@@ -9,9 +9,9 @@ Add this to your `WORKSPACE`
 ```python
 http_archive(
     name = "rules_imagemagick",
-    strip_prefix = "rules_imagemagick-f27f35fca2722ebf463c6209a3ba9ef85f2e58aa",
-    urls = ["https://github.com/zaucy/rules_imagemagick/archive/f27f35fca2722ebf463c6209a3ba9ef85f2e58aa.zip"],
-    sha256 = "5fbdda473beb1327c4b6c46fea636e336fa05e48902e584a11b36ef350c512de",
+    strip_prefix = "rules_imagemagick-fda1b8ff5214648bd581dc2ca9a5ad0d20136761",
+    urls = ["https://github.com/zaucy/rules_imagemagick/archive/fda1b8ff5214648bd581dc2ca9a5ad0d20136761.zip"],
+    sha256 = "",
 )
 
 load("@rules_imagemagick//:index.bzl", "imagemagick_repositories")
