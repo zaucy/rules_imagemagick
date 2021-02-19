@@ -25,13 +25,13 @@ def magick_genrule(
         cmd = magick_bin_location_str + cmd
 
     if cmd_bash != None:
-        cmd_bash = magick_bin_location_str + cmd
+        cmd_bash = magick_bin_location_str + cmd_bash
 
     if cmd_bat != None:
-        cmd_bat = magick_bin_location_str + cmd
+        cmd_bat = magick_bin_location_str + cmd_bat
 
     if cmd_ps != None:
-        cmd_ps = magick_bin_location_str + cmd
+        cmd_ps = magick_bin_location_str + cmd_ps
 
     native.genrule(
         cmd = cmd,
