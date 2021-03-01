@@ -36,16 +36,16 @@ def imagemagick_repositories():
     http_archive(
         name = "imagemagick_win64",
         urls = [
-            "https://imagemagick.org/ImageMagick/download/binaries/ImageMagick-7.0.11-2-portable-Q16-x64.zip",
+            "https://download.imagemagick.org/ImageMagick/download/binaries/ImageMagick-7.0.11-2-portable-Q16-x64.zip",
         ],
-        sha256 = "b85fcf4a7b63f0c8d3cc30645b2ac12f57cf66876f783e09427bf7a953393adc",
+        sha256 = "be35276fcf53f2ee949aa4a87790eea3d5015208c0ddca6c8218d4c75ad49917",
         build_file_content = _imagemagick_build_file_content,
     )
 
     http_archive(
         name = "imagemagick_win32",
         urls = [
-            "https://imagemagick.org/ImageMagick/download/binaries/ImageMagick-7.0.11-2-portable-Q16-x86.zip",
+            "https://download.imagemagick.org/ImageMagick/download/binaries/ImageMagick-7.0.11-2-portable-Q16-x86.zip",
         ],
         sha256 = "",
         build_file_content = _imagemagick_build_file_content,
@@ -59,7 +59,7 @@ def imagemagick_repositories():
         name = "imagemagick_darwin",
         strip_prefix = "ImageMagick-7.0.11",
         urls = [
-            "https://imagemagick.org/ImageMagick/download/binaries/ImageMagick-x86_64-apple-darwin20.1.0.tar.gz",
+            "https://download.imagemagick.org/ImageMagick/download/binaries/ImageMagick-x86_64-apple-darwin20.1.0.tar.gz",
         ],
         sha256 = "",
         build_file_content = _imagemagick_build_file_content,
