@@ -35,15 +35,19 @@ _imagemagick_linux_repo = repository_rule(
 def imagemagick_repositories():
     http_archive(
         name = "imagemagick_win64",
-        urls = ["https://download.imagemagick.org/ImageMagick/download/binaries/ImageMagick-7.0.11-5-portable-Q16-x64.zip"],
-        sha256 = "fc3402bc8efcd29537fb803abd08a892e966c57f83eccde4ccc853da2f0b9ac3",
+        urls = [
+            "https://download.imagemagick.org/ImageMagick/download/binaries/ImageMagick-7.0.11-6-portable-Q16-x64.zip",
+        ],
+        sha256 = "7b20456ef925eed248c1389201254205171d883acf12c0369ae08a41db317793",
         build_file_content = _imagemagick_build_file_content,
     )
 
     http_archive(
         name = "imagemagick_win32",
-        urls = ["https://download.imagemagick.org/ImageMagick/download/binaries/ImageMagick-7.0.11-5-portable-Q16-x86.zip"],
-        sha256 = "9fb064a1c39cab895cb977ab6f49390cd773a810df1f69d7c2f2182731581b86",
+        urls = [
+            "https://download.imagemagick.org/ImageMagick/download/binaries/ImageMagick-7.0.11-6-portable-Q16-x86.zip",
+        ],
+        sha256 = "",
         build_file_content = _imagemagick_build_file_content,
     )
 
