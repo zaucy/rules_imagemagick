@@ -57,9 +57,9 @@ def imagemagick_repositories():
 
     http_archive(
         name = "imagemagick_darwin",
-        strip_prefix = "ImageMagick-7.0.11",
+        strip_prefix = "ImageMagick-7.0.10",
         urls = ["https://download.imagemagick.org/ImageMagick/download/binaries/ImageMagick-x86_64-apple-darwin20.1.0.tar.gz"],
-        sha256 = "",
+        sha256 = "7b2f8c7fa29192cabe33126853b1c6ddf416bbb7bcccc01d9583ed2ebac06838",
         build_file_content = _imagemagick_build_file_content,
     )
 
